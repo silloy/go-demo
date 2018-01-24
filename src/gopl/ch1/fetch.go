@@ -10,6 +10,7 @@ import (
 
 func main() {
 	for _, url := range os.Args[1:] {
+		//var httpSchemeRE = regexp.MustCompile(`^https?:`) //"http:" or "https:"
 		if !strings.HasPrefix(url, "http://") && !strings.HasPrefix(url, "https://") {
 			url = "https://" + url
 		}
@@ -28,3 +29,4 @@ func main() {
 		fmt.Printf("%s", b)
 	}
 }
+
