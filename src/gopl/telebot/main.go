@@ -8,7 +8,8 @@ import (
 func main() {
 	var debug bool
 
-	robot := newRobot("507339805:AAHh3XXpxLD7vAf_tGC3ictm0822E9Qj_0I", "ZenJingBot", "", Proxy())
+	robot := newRobot("507339805:AAHh3XXpxLD7vAf_tGC3ictm0822E9Qj_0I",
+		"ZenJingBot", "", Proxy())
 	robot.bot.Debug = debug
 	robot.run()
 }
