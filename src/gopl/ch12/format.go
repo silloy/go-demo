@@ -23,11 +23,10 @@ func formatAtom(v reflect.Value) string {
 	}
 }
 
-func main()  {
+func main() {
 	e, _ := eval.Parse("sqrt(A / pi)")
 	Display("e", e)
 }
-
 
 func Display(name string, x interface{}) {
 	fmt.Printf("Display %s (%T):\n", name, x)
