@@ -1,4 +1,4 @@
-package inter
+package switcher
 
 import "fmt"
 

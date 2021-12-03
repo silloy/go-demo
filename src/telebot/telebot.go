@@ -1,12 +1,11 @@
 package main
 
 import (
-	"gopkg.in/telegram-bot-api.v4"
+	"encoding/json"
+	"fmt"
 	"log"
 	"net/http"
-	"fmt"
 	"strings"
-	"encoding/json"
 	"time"
 )
 

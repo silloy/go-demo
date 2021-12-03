@@ -1,9 +1,9 @@
 package tests
 
 import (
-	"testing"
 	"fmt"
-	. "ge-web/method"
+	. "src/go-web-test/method"
+	"testing"
 )
 
 func TestMethod(t *testing.T) {

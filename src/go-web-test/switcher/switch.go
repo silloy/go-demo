@@ -1,8 +1,8 @@
-package inter
+package switcher
 
 import (
-	"strconv"
 	"fmt"
+	"strconv"
 )
 
 type Element interface{}
@@ -18,7 +18,7 @@ func (p Person) String() string {
 	return "(name: " + p.name + " - age: "+ strconv.Itoa(p.age)+ " years)"
 }
 
-func run()  {
+func Run()  {
 	list := make(List, 3)
 	list[0] = 1 //an int
 	list[1] = "Hello" //a string
@@ -33,7 +33,7 @@ func run()  {
 		case Person:
 			fmt.Printf("list[%d] is a Person and its value is %s\n", index, value)
 		default:
-			fmt.Println("list[%d] is of a different type", index)
+			fmt.Printf("list[%d] is of a different type", index)
 		}
 	}
 }

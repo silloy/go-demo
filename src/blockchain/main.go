@@ -12,11 +12,11 @@ import (
 	"net/http"
 	"time"
 
+	"fmt"
 	"github.com/davecgh/go-spew/spew"
 	"github.com/gorilla/mux"
 	"github.com/joho/godotenv"
 	"os"
-	"fmt"
 )
 
 // Block represents each 'item' in the blockchain
