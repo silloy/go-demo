@@ -2,17 +2,12 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"gopkg.in/yaml.v2"
+	"io/ioutil"
 	"os"
 	"path/filepath"
 )
 
-func main() {
-	var c conf
-	conf := c.getConf()
-	fmt.Println(conf.Host)
-}
 
 //profile variables
 type conf struct {
